@@ -65,7 +65,7 @@ function App() {
           <Golang className="" />
         </div> */}
         {repos && <h2 className="text-4xl font-mono">My Projects</h2>}
-        <div className="container mx-auto mt-4 mx-4">
+        <div className="container mx-auto mt-4">
           {repos && (
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
               {repos.map((repo) => {
