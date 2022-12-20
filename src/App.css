@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400&family=M+PLUS+Code+Latin:wght@600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main_para {
+  font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+.nav_h1 {
+  font-family: 'Azeret Mono', monospace;
+}
