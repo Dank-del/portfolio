@@ -62,10 +62,11 @@ function App() {
         </p>
         {repos && <h2 className="text-4xl font-mono">My Projects</h2>}
         {repos && (
-          <div className="grid grid-rows-2 grid-flow-col gap-2 mt-4">
+          <div className="flex justify-center	grid grid-rows-2 grid-flow-col gap-4 mt-4 mx-4">
             {repos.map((repo) => {
               return (
                 <Card
+                  className="col-span-2"
                   key={repo.id}
                   url={repo.svn_url}
                   repoName={repo.name}
