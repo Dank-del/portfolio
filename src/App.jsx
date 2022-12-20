@@ -60,7 +60,7 @@ function App() {
           dedicated and hardworking individual with a strong passion for coding
           and making a positive impact through my work.
         </p>
-        <h2 className="text-4xl font-mono">My Projects</h2>
+        {repos && <h2 className="text-4xl font-mono">My Projects</h2>}
         {repos && (
           <div className="grid grid-rows-2 grid-flow-col gap-2 mt-4">
             {repos.map((repo) => {
