@@ -60,23 +60,29 @@ function App() {
           dedicated and hardworking individual with a strong passion for coding
           and making a positive impact through my work.
         </p>
+        {/* <div>
+          <h2 className="text-4xl font-mono">Skills</h2>
+          <Golang className="" />
+        </div> */}
         {repos && <h2 className="text-4xl font-mono">My Projects</h2>}
-        {repos && (
-          <div className="flex justify-center	grid grid-rows-2 grid-flow-col gap-4 mt-4 mx-4">
-            {repos.map((repo) => {
-              return (
-                <Card
-                  className="col-span-2"
-                  key={repo.id}
-                  url={repo.svn_url}
-                  repoName={repo.name}
-                  repoDesc={repo.description}
-                  language={repo.language}
-                />
-              );
-            })}
-          </div>
-        )}
+        <div className="container mx-auto mt-4 mx-4">
+          {repos && (
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+              {repos.map((repo) => {
+                return (
+                  <Card
+                    className="flex justify-center"
+                    key={repo.id}
+                    url={repo.svn_url}
+                    repoName={repo.name}
+                    repoDesc={repo.description}
+                    language={repo.language}
+                  />
+                );
+              })}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
