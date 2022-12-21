@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { useEffect, useState } from 'react';
 import getGh from './lib/getGh';
 import Card from './components/Card';
+import Footer from './components/Footer';
 
 function App() {
   const [repos, setRepos] = useState([]);
@@ -84,6 +85,7 @@ function App() {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
