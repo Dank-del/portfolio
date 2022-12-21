@@ -62,7 +62,9 @@ function App() {
           dedicated and hardworking individual with a strong passion for coding
           and making a positive impact through my work.
         </p>
+        <div class="border border-violet-900 mt-2 mb-3" />
         <Skills />
+        <div class="border border-violet-900 mt-2 mb-3" />
         {repos && <h2 className="text-4xl font-mono">My Projects</h2>}
         <div className="container mx-auto mt-4">
           {repos && (
