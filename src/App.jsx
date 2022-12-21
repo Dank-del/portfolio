@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import getGh from './lib/getGh';
 import Card from './components/Card';
 import Footer from './components/Footer';
+import Skills from './components/Skills';
 
 function App() {
   const [repos, setRepos] = useState([]);
@@ -61,10 +62,7 @@ function App() {
           dedicated and hardworking individual with a strong passion for coding
           and making a positive impact through my work.
         </p>
-        {/* <div>
-          <h2 className="text-4xl font-mono">Skills</h2>
-          <Golang className="" />
-        </div> */}
+        <Skills />
         {repos && <h2 className="text-4xl font-mono">My Projects</h2>}
         <div className="container mx-auto mt-4">
           {repos && (
