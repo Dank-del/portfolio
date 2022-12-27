@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <div className="m-5 flex flex-col flex-center">
+      <div className="m-3 flex flex-col flex-center">
         <h1 className="mt-2 text-4xl mb-8">
           Hi, I am{' '}
           {
@@ -68,7 +68,7 @@ function App() {
         {repos && <h2 className="text-4xl font-mono">My Projects</h2>}
         <div className="container mx-auto mt-4">
           {repos && (
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-6">
               {repos.map((repo) => {
                 return (
                   <Card

@@ -2,7 +2,7 @@ export default function Footer() {
   const d = new Date();
   let year = d.getFullYear();
   return (
-    <footer class="bg-gray-900 text-white py-6">
+    <footer class="bg-gray-800 text-white py-6">
       <div class="container mx-auto px-6">
         <div class="flex items-center justify-between">
           <div class="text-sm text-gray-500">Copyright {year} Sayan Biswas</div>

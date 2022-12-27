@@ -6,8 +6,8 @@ export default function Card({ repoName, repoDesc, language, url }) {
     >
       <div className="card-body">
         <h2 className="card-title">{repoName}</h2>
-        <p>{repoDesc}</p>
-        <p>{language}</p>
+        <p className="font-mono">{repoDesc}</p>
+        <strong>{language}</strong>
       </div>
     </div>
   );

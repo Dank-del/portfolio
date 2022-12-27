@@ -2,7 +2,7 @@ export default function Skills() {
   return (
     <div>
       <h2 className="text-4xl font-mono">Skills</h2>
-      <div class="grid grid-cols-3 lg:grid-cols-6 gap-4 mt-3 mb-4">
+      <div class="grid grid-cols-3 lg:grid-cols-9 gap-4 mt-3 mb-4">
         <div class="col-span-1 flex justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
