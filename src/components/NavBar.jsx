@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function NavBar() {
   return (
-    <div className="navbar bg-base-100 sticky top-0 fixed w-screen">
+    <div className="z-50 navbar bg-base-100 sticky top-0 fixed w-screen">
       <div className="navbar-center">
         <a className="btn btn-ghost normal-case text-4xl font-mono">
           <TypeAnimation
